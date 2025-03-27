@@ -30,6 +30,7 @@
 
 
 <script setup lang="ts">
+import { computed } from 'vue' // Добавьте этот импорт
 import { useFavoritesStore } from '@/stores/favorites.store'  // Исправленный путь
 import type { Product } from '@/types'
 

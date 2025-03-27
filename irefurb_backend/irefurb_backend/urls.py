@@ -17,9 +17,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('shop.urls')),
-
-    # Documentation
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0)),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0)),
+    path('api/', include('shop.urls')),  # Это основная строка
+    path('swagger/', schema_view.with_ui('swagger')),
+    path('redoc/', schema_view.with_ui('redoc')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,29 +1,3 @@
-# from rest_framework import viewsets, permissions
-# from .models import Product
-# from .serializers import ProductSerializer, RegisterSerializer
-# from rest_framework.response import Response
-# from rest_framework import status
-
-
-# class ProductViewSet(viewsets.ModelViewSet):
-#     queryset = Product.objects.all()
-#     serializer_class = ProductSerializer
-#     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-
-#     def perform_create(self, serializer):
-#         serializer.save(seller=self.request.user)
-
-
-# class RegisterView(viewsets.GenericViewSet):
-#     serializer_class = RegisterSerializer
-
-#     def create(self, request):
-#         serializer = self.get_serializer(data=request.data)
-#         serializer.is_valid(raise_exception=True)
-#         serializer.save()
-#         return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-
 from rest_framework import viewsets, generics, permissions, status
 from rest_framework.response import Response
 from .models import Product, Favorite

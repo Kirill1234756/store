@@ -2,7 +2,8 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
-// import './assets/tailwind.css' // Подключение Tailwind CSS
+import { useToastStore } from '@/stores/toast.store' // Добавляем импорт
+import './assets/main.css' // Подключение Tailwind CSS
 
 // Инициализация API
 import api from '@/utils/api'

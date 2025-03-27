@@ -43,10 +43,12 @@ const { products, loading, error, fetchProducts, fetchProduct } = useProducts()
 const { filters, updateFilters } = useFilters()
 const selectedProduct = ref<Product | null>(null)
 
+// Добавляем проверку на массив и опциональную цепочку
 const filteredProducts = computed(() => {
-  return products.value.filter(product => 
-    product.title.toLowerCase().includes(filters.search.toLowerCase())
-  )
+  return Array.isArray(products.value) 
+    ? products.value.filter(product => 
+        product?.title?.toLowerCase().includes(filters.search?.toLowerCase() || ''))
+    : []
 })
 
 const handleFilterUpdate = (newFilters: any) => {
