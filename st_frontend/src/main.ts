@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router'
 import { useToastStore } from '@/stores/toast.store' // Добавляем импорт
 import './assets/main.css' // Подключение Tailwind CSS
+// import './assets/color.scss'
 
 // Инициализация API
 import api from '@/utils/api'

@@ -1,0 +1,36 @@
+:root {
+  // Основные цвета
+  --color-primary: #2A5C8D;
+  --color-primary-light: #3A7CB9;
+  --color-primary-dark: #1C4568;
+  
+  --color-accent: #FF6B35;
+  --color-accent-light: #FF8C5A;
+  --color-accent-dark: #E05A2B;
+
+  // Нейтральные цвета
+  --color-bg: #FFFFFF;
+  --color-text: #2D3748;
+  --color-text-secondary: #4A5568;
+  --color-border: #E2E8F0;
+
+  // Системные цвета
+  --color-success: #38A169;
+  --color-error: #E53E3E;
+  --color-warning: #DD6B20;
+}
+
+.dark {
+  --color-primary: #3A7CB9;
+  --color-primary-light: #4D90CF;
+  --color-primary-dark: #2A5C8D;
+  
+  --color-accent: #FF8C5A;
+  --color-accent-light: #FFA578;
+  --color-accent-dark: #FF6B35;
+
+  --color-bg: #1A202C;
+  --color-text: #EDF2F7;
+  --color-text-secondary: #A0AEC0;
+  --color-border: #2D3748;
+}
