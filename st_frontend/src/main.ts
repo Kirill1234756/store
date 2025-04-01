@@ -8,7 +8,7 @@ import './assets/main.css' // Подключение Tailwind CSS
 
 // Инициализация API
 import api from '@/utils/api'
-import { useAuthStore } from '@/stores/auth.store'
+// import { useAuthStore } from '@/stores/auth.store'
 
 // Инициализация приложения
 const app = createApp(App)

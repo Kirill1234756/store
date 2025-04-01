@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
     <!-- Навигация -->
-    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
       <RouterLink to="/" class="text-2xl font-bold text-blue-800 dark:text-blue-200">
         iRefurb
       </RouterLink>
@@ -20,7 +20,7 @@
           Продать
         </AppButton>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- Hero-баннер с lazy loading видео -->
     <section class="relative h-[80vh] overflow-hidden bg-blue-900 dark:bg-blue-950">
@@ -125,7 +125,7 @@
       </div>
     </section>
 
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </div>
 </template>
 
@@ -134,7 +134,7 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useDark } from '@vueuse/core'
 import AppButton from '@/components/ui/AppButton.vue'
-import ProductCard from '@/components/products/ProductCard.vue'
+// import ProductCard from '@/components/products/ProductCard.vue'
 import ProductCardSkeleton from '@/components/products/ProductCardSkeleton.vue'
 import TrustItem from '@/components/ui/TrustItem.vue'
 import BlogCard from '@/components/blog/BlogCard.vue'

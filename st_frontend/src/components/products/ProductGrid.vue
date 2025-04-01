@@ -5,12 +5,12 @@
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
       v-if="products.length > 0"
     >
-      <ProductCard
+      <!-- <ProductCard
         v-for="product in products"
         :key="product.id"
         :product="product"
         class="hover:shadow-lg transition-shadow duration-300"
-      />
+      /> -->
     </div>
 
     <!-- Сообщение при отсутствии товаров -->
@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import ProductCard from '@/components/products/ProductCard.vue'
+// import ProductCard from '@/components/products/ProductCard.vue'
 import AppButton from '@/components/ui/AppButton.vue'
 
 defineProps({

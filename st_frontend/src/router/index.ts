@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import CatalogView from '@/views/CatalogView.vue'
+// import { authGuard } from './guards'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,7 +15,7 @@ const router = createRouter({
     path: '/favorites',
     name: 'Favorites',
     component: () => import('@/views/FavoritesView.vue'),
-    beforeEnter: authGuard
+    // beforeEnter: authGuard
   },
 {
   path: '/product/:id',
@@ -23,7 +24,7 @@ const router = createRouter({
   meta: {
     title: 'Страница товара'
   }
-}бdfd 
+},
   {
     path: '/auth',
     name: 'Auth',
@@ -34,7 +35,7 @@ const router = createRouter({
     path: '/profile',
     name: 'Profile',
     component: () => import('@/views/ProfileView.vue'),
-    beforeEnter: authGuard
+    // beforeEnter: authGuard
   },
     {
       path: '/catalog',
